@@ -1,0 +1,335 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+/* ------ HEADER ------ */
+
+
+.flex-container{
+  background: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.menu-nav{
+   display: flex;
+ }
+    
+.menu-nav a{
+  text-decoration: none;  
+  padding: 23px;
+  color: #ffffff; 
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.menu-nav a:hover{
+
+background: blue;
+}
+
+/*-----capa------*/
+
+.capa{
+    background-image: url(../IMG/sea-bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.capa h1{
+    max-width: 500px;
+    font-size: 70px;
+    margin-bottom: 0;
+    text-shadow: 3px 3px black;
+}
+
+.capa h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin-top: 0;
+    border-top: 3px solid white;
+}
+
+.capa .botao{
+    border: 1px solid white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.capa .botao:hover{
+    background-color: #01acea;
+    border: 0px;
+}
+
+/*--------- Fim de Capa----------*/
+
+
+/*-----------projeto----------*/
+
+.projeto{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f7f7f7;
+
+    flex-wrap: wrap;  /* responsividade*/
+
+}
+
+.video{
+    flex: 50%;
+    padding: 0px 50px;
+}
+
+.video iframe{
+    width: 100%;
+}
+
+.sobre-projeto{
+    flex: 50%;
+    padding: 0px 50px ;
+}
+
+.sobre-projeto h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.sobre-projeto p{
+    text-align: justify;
+}
+
+/*---------Fim de Projeto-------------*/
+
+
+
+/*------------------ SELEÇÃO --------------*/
+.t-selecao{
+    text-align: center;
+}
+
+.selecao{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+}
+
+.card{
+    flex: 25%;
+    text-align: center;
+    padding: 0 50px;
+
+    flex-wrap: wrap;
+
+}
+
+.img-selecao{
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.img-selecao img{
+    max-width: 60%;
+    margin: 15px;
+
+}
+
+.img-selecao:hover{
+    background-color: lightblue;
+}
+
+
+/*----------- Fim de Seleção------------*/
+
+/*---------- Ecopontos -----------*/
+.ecopontos{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0 20px 0;
+    
+}
+
+.ecopontos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ecopontos h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap; /*reponsividade*/
+}
+
+.card-ecopontos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #777777;
+
+    flex: 30%;
+}
+
+.card-ecopontos img{
+    max-width: 100%;
+    height: 300px;
+}
+
+/*.card-ecopontos:hover{
+    box-shadow: 2px 7px 8px #777777;
+    transition: 0.5s;
+
+}
+
+
+/*------------ Sobre Mim -----------*/
+.sobre{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    background-color: #f7f7f7f7;
+    flex-wrap: wrap;
+
+}
+
+.coluna{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.coluna img{
+    max-width: 100%;
+}
+
+.coluna h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.coluna h4{
+    text-align: center;
+}
+
+.coluna p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*------------------------------------------- Rodapé ---------------------------------------------*/
+footer{
+    display: flex;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 30px 0px 50px 0;
+    background-color: #01acea;
+    color: #ffffff;
+}
+
+/*-------------------------------------------- RESPONSIVIDADE -------------------------------------*/
+
+@media (max-width: 760px){
+         
+    /*Header Responsivo*/
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+
+    }
+
+    .menu-nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-nav a{
+        padding: 2px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    .projeto{
+        flex-direction: column;
+    }
+
+    .video{
+        flex: 1;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .sobre-projeto{
+        padding: 20px;
+    }
+      
+    /*Seleção responsivo*/
+    .selecao{
+        flex-direction: column;
+    }
+
+    /*Ecopontos Responsivo*/
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* Sobre Responsivo*/
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+
+    
+
+
+}
+
